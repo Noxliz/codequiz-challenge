@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 id="question">Question</h1>
+            <div class="timer">Temps restant: <span id="time">60</span>s</div>
+            <div class="score">Score: <span id="score">0</span></div>
+        </div>
+        <div class="options" id="options">
+            <!-- Options will be inserted here by JavaScript -->
+        </div>
+        <div class="controls">
+            <button id="next-btn" class="next-btn btn">Suivant</button>
+        </div>
+        <div class="feedback" id="feedback"></div>
+    </div>
+    <div class="result-container" id="result-container" style="display: none;">
+        <h2>Résultat Final</h2>
+        <p>Votre score: <span id="final-score">0</span>/<span id="total-questions">0</span></p>
+        <button id="restart-btn" class="btn">Recommencer</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
